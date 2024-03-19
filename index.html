@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<link type="image/x-icon" rel="shortcut icon" href="02.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文件备份</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .post-list {
+      margin-top: 30px;
+    }
+
+    .post {
+      display: flex; /* 添加弹性布局 */
+      align-items: center; /* 让头像和内容垂直居中对齐 */
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+    }
+
+    .fade-in {
+      animation: fade-in 0.5s forwards;
+    }
+
+    .selected {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .post {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>网页版我的世界备份</h1>
+  </header>
+
+  <section class="post-list">
+    <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="01.png" alt="原作者仓库备份版">
+      <div>
+        <h2>原作者仓库备份版</h2>
+        <p>大小:13.0MB</p>
+        <a href="https://www.123pan.com/s/sL6DVv-2w5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+
+    <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="01.png" alt="早期原作者仓库备份版">
+      <div>
+        <h2>早期原作者仓库备份版</h2>
+        <p>大小:51.7MB</p>
+        <p>1.打开java文件夹<br />
+2.分别运行两个小文件夹下面的run.bat
+到这一步服务器就打开了<br />
+3.打开game.html<br />
+4.愉快的玩耍！</p>
+<a href="https://www.123pan.com/s/sL6DVv-Nw5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+
+    <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="imc.png" alt="Eaglercraft_1.3">
+      <div>
+	  <h2>Eaglercraft_1.5(imc最新，Discord默认左←边）</h2>
+        <p>2023/06/04<br />大小:12.6 MB</p>
+        <a href="https://www.123pan.com/s/sL6DVv-FaVv3.html">点击这里下载文件</a>
+      </div>
+	  
+    </div>
+	<div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="imc.png" alt="Eaglercraft_1.3">
+      <div>
+        <h2>Eaglercraft_1.3</h2>
+        <p>Eaglercraft_1.3版本2/22/2022<br />大小:4.35MB</p>
+        <a href="https://www.123pan.com/s/sL6DVv-Rw5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+    
+    <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="imc.png" alt="Eaglercraft_1.5(imc迁移前的版本)">
+      <div>
+        <h2>Eaglercraft_1.5(imc迁移前的版本)</h2>
+        <p>大小:12.6MB</p>
+        <p>10/01/2022的版本</p>
+<a href="https://www.123pan.com/s/sL6DVv-Dw5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+    
+    <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="imc.png" alt="Eaglercraft_1.5(imc迁移后的版本)">
+      <div>
+        <h2>Eaglercraft_1.5(imc迁移后的版本)</h2>
+        <p>大小:51.7MB</p>
+        <p>06/04/2023</p>
+<a href="https://www.123pan.com/s/sL6DVv-rw5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+	
+	 <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="imc.png" alt="Eaglercraft_1.5(imc迁移后的版本)">
+      <div>
+        <h2>Eaglercraft_1.8</h2>
+        <p>大小:19.3MB</p>
+        <p>01/23/2023</p>
+<a href="https://www.123pan.com/s/sL6DVv-8w5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+	
+		 <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="BMS.PNG" alt="Eaglercraft_1.5(imc迁移后的版本)">
+      <div>
+        <h2>Eaglercraft_1.5 BMS镜像</h2>
+        <p>大小:12.6MB</p>
+        <p>06/01/2023</p>
+		<p>因为热爱，所以创造</p>
+<a href="https://www.123pan.com/s/sL6DVv-0w5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+	
+	 <div class="post fade-in" onclick="selectPost(this)">
+      <img class="avatar" src="rock_box.jpg" alt="Eaglercraft_1.5(imc迁移后的版本)">
+      <div>
+	<h2>Eaglercraft_1.5 第一个公开版</h2>
+        <p>大小:12.6MB</p>
+        <p>05/16/2022</p>
+		<span style="color: goldenrod;">rock box独家</span>
+        <a href="https://www.123pan.com/s/sL6DVv-Kw5v3.html">点击这里下载文件</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function selectPost(post) {
+      const selectedPosts = document.querySelectorAll(".selected");
+      selectedPosts.forEach(function(selectedPost) {
+        selectedPost.classList.remove("selected");
+      });
+      post.classList.add("selected");
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const posts = document.querySelectorAll(".post");
+
+      function showPosts() {
+        posts.forEach(function(post, index) {
+          setTimeout(function() {
+            post.classList.add("fade-in");
+          }, index * 300);
+        });
+      }
+
+      showPosts();
+    });
+  </script>
+</body>
+
+</html>
